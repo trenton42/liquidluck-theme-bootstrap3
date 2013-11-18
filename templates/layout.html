@@ -46,7 +46,7 @@
               {% endfor %}
               <h3>Tags</h3>
               {% for tag in resource.tag %}
-              <a href="{{ tag|tag_url }}"><span class="label label-default">{{tag}}</span></a>
+              <span class="label label-default"><a href="{{ tag|tag_url }}">{{tag}}</a></span>
               {% endfor %}
               <div class="footer">
                 <p class="text-muted"><small>copyright &copy; 2013</small></p>

@@ -94,3 +94,8 @@ h1, h2, h3, h4 {
 .entry-title {
     margin-top: 0;
 }
+
+.label a {
+    color: inherit;
+    text-decoration: none;
+}
