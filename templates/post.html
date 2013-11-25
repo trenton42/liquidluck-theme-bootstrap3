@@ -11,7 +11,7 @@
     <h1 class="entry-title">{{post.title}}</h1>
     <div class="entry-meta">
         <time class="updated" datetime="{{post.date|xmldatetime}}"{%if post.review%} itemprop="dtreviewed"{%endif%} pubdate>
-            <a href="{{ post|year_url }}">{{post.date.strftime('%Y-%m-%d')}}</a>
+            <a href="{{ post|permalink }}">{{post.date.strftime('%Y-%m-%d')}}</a>
         </time>
         <span class="author vcard">
             {% if post.author.website -%}
