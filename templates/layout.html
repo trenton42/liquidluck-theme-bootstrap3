@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="UTF-8">
     <title>{% block title %}{{site.name}}{% endblock %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{static_url('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -26,7 +27,7 @@
               <li><a href="{{item.link}}">{{item.title}}</a></li>
               {%- endfor %}
             </ul>
-            <h1 class="navbar-right">Ikso Blahg</h1>
+            <h1 class="navbar-right"><a href="{{site.url}}">{{site.name}}</a></h1>
           </nav>
         </div>
       </div>
